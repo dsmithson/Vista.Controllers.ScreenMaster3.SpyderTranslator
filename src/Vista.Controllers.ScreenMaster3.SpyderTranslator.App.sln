@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vista.Controllers.ScreenMaster3.SpyderTranslator.App", "Vista.Controllers.ScreenMaster3.SpyderTranslator.App\Vista.Controllers.ScreenMaster3.SpyderTranslator.App.csproj", "{E318D894-78A2-46C1-9490-ED71BC8E743D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vista.Controller.ScreenMaster3.SpyderTranslator", "Vista.Controller.ScreenMaster3.SpyderTranslator\Vista.Controller.ScreenMaster3.SpyderTranslator.csproj", "{8BDA9157-6BDF-4B73-B1A9-3B2A6BB67E19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vista.Controllers.ScreenMaster3.MessageQueue", "..\..\Vista.Controllers.ScreenMaster3.MessageQueue\src\Vista.Controllers.ScreenMaster3.MessageQueue\Vista.Controllers.ScreenMaster3.MessageQueue.csproj", "{D3E67BDC-E8BE-4AB7-8B9C-C5F1DFCB2B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleVisualizer", "ConsoleVisualizer\ConsoleVisualizer.csproj", "{7F89E28F-6BC2-491C-AC13-A3CB235E540D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpyderConsoleLibrary", "SpyderConsoleLibrary\SpyderConsoleLibrary.csproj", "{29212695-CBA9-4BA0-A084-03046B364820}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E318D894-78A2-46C1-9490-ED71BC8E743D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E318D894-78A2-46C1-9490-ED71BC8E743D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E318D894-78A2-46C1-9490-ED71BC8E743D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E318D894-78A2-46C1-9490-ED71BC8E743D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BDA9157-6BDF-4B73-B1A9-3B2A6BB67E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDA9157-6BDF-4B73-B1A9-3B2A6BB67E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BDA9157-6BDF-4B73-B1A9-3B2A6BB67E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BDA9157-6BDF-4B73-B1A9-3B2A6BB67E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E67BDC-E8BE-4AB7-8B9C-C5F1DFCB2B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E67BDC-E8BE-4AB7-8B9C-C5F1DFCB2B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E67BDC-E8BE-4AB7-8B9C-C5F1DFCB2B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E67BDC-E8BE-4AB7-8B9C-C5F1DFCB2B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F89E28F-6BC2-491C-AC13-A3CB235E540D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F89E28F-6BC2-491C-AC13-A3CB235E540D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F89E28F-6BC2-491C-AC13-A3CB235E540D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F89E28F-6BC2-491C-AC13-A3CB235E540D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29212695-CBA9-4BA0-A084-03046B364820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29212695-CBA9-4BA0-A084-03046B364820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29212695-CBA9-4BA0-A084-03046B364820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29212695-CBA9-4BA0-A084-03046B364820}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47CB07E7-774A-45E4-B332-349B2A0FF093}
+	EndGlobalSection
+EndGlobal

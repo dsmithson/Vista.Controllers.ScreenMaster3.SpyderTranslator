@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SM3-3216.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="SM3-3216.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Vista.Controllers.ScreenMaster3.MessageQueue\src\Vista.Controllers.ScreenMaster3.MessageQueue\Vista.Controllers.ScreenMaster3.MessageQueue.csproj" />
+    <ProjectReference Include="..\SpyderConsoleLibrary\SpyderConsoleLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

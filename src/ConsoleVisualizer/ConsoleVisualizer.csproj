@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Spyder.Console</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KnightwareCore" Version="3.1.0" />
+    <PackageReference Include="SpyderClientLibrary" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpyderConsoleLibrary\SpyderConsoleLibrary.csproj" />
+    <ProjectReference Include="..\Vista.Controller.ScreenMaster3.SpyderTranslator\Vista.Controller.ScreenMaster3.SpyderTranslator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Themes\" />
+  </ItemGroup>
+
+</Project>

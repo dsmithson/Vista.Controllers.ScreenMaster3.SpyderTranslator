@@ -1,0 +1,296 @@
+﻿{
+    "startupSegmentConfig": [
+        { "segmentId": 0, "segmentType": "FunctionKey", "index": 0 },
+        { "segmentId": 1, "segmentType": "FunctionKey", "index": 1 },
+        { "segmentId": 2, "segmentType": "FunctionKey", "index": 2 },
+        { "segmentId": 3, "segmentType": "FunctionKey", "index": 3 },
+        { "segmentId": 9, "segmentType": "FunctionKey", "index": 4 },
+        { "segmentId": 10, "segmentType": "FunctionKey", "index": 5 },
+
+        { "segmentId": 4, "segmentType": "Treatment", "index": 0 },
+        { "segmentId": 5, "segmentType": "Treatment", "index": 1 },
+
+        { "segmentId": 6, "segmentType": "CommandKey", "index": 0 },
+        { "segmentId": 7, "segmentType": "CommandKey", "index": 1 },
+
+        { "segmentId": 8, "segmentType": "Source", "index": 0 },
+        { "segmentId": 12, "segmentType": "Source", "index": 1 },
+        { "segmentId": 13, "segmentType": "Source", "index": 2 },
+        { "segmentId": 14, "segmentType": "Source", "index": 3 },
+
+        { "segmentId": 11, "segmentType": "Device", "index": 3 },
+        { "segmentId": 15, "segmentType": "Transition", "index": 3 }
+    ],
+
+    "customSegmentButtons": {
+        "multi1-treatment": [
+            { "segmentId": 4, "segmentType": "Treatment", "index": 0 },
+            { "segmentId": 5, "segmentType": "Treatment", "index": 1 }
+        ],
+        "multi1-ckey1": [
+            { "segmentId": 4, "segmentType": "CommandKey", "index": 0 },
+            { "segmentId": 5, "segmentType": "CommandKey", "index": 1 }
+        ],
+        "multi1-ckey2": [
+            { "segmentId": 4, "segmentType": "CommandKey", "index": 2 },
+            { "segmentId": 5, "segmentType": "CommandKey", "index": 3 }
+        ],
+
+        "multi2-treatment": [
+            { "segmentId": 6, "segmentType": "Treatment", "index": 0 },
+            { "segmentId": 7, "segmentType": "Treatment", "index": 1 }
+        ],
+        "multi2-ckey1": [
+            { "segmentId": 6, "segmentType": "CommandKey", "index": 0 },
+            { "segmentId": 7, "segmentType": "CommandKey", "index": 1 }
+        ],
+        "multi2-ckey2": [
+            { "segmentId": 6, "segmentType": "CommandKey", "index": 2 },
+            { "segmentId": 7, "segmentType": "CommandKey", "index": 3 }
+        ]
+    },
+
+    "keyMappings": {
+        "0": { "segmentId": 8, "buttonIndex": 8 },
+        "1": { "segmentId": 8, "buttonIndex": 9 },
+        "2": { "segmentId": 8, "buttonIndex": 10 },
+        "3": { "segmentId": 8, "buttonIndex": 11 },
+        "4": { "segmentId": 8, "buttonIndex": 12 },
+        "5": { "segmentId": 8, "buttonIndex": 13 },
+        "6": { "segmentId": 8, "buttonIndex": 14 },
+        "7": { "segmentId": 8, "buttonIndex": 15 },
+
+        "8": { "segmentId": 12, "buttonIndex": 8 },
+        "9": { "segmentId": 12, "buttonIndex": 9 },
+        "10": { "segmentId": 12, "buttonIndex": 10 },
+        "11": { "segmentId": 12, "buttonIndex": 11 },
+        "12": { "segmentId": 12, "buttonIndex": 12 },
+        "13": { "segmentId": 12, "buttonIndex": 13 },
+        "14": { "segmentId": 12, "buttonIndex": 14 },
+        "15": { "segmentId": 12, "buttonIndex": 15 },
+
+        "16": { "segmentId": 13, "buttonIndex": 8 },
+        "17": { "segmentId": 13, "buttonIndex": 9 },
+        "18": { "segmentId": 13, "buttonIndex": 10 },
+        "19": { "segmentId": 13, "buttonIndex": 11 },
+        "20": { "segmentId": 13, "buttonIndex": 12 },
+        "21": { "segmentId": 13, "buttonIndex": 13 },
+        "22": { "segmentId": 13, "buttonIndex": 14 },
+        "23": { "segmentId": 13, "buttonIndex": 15 },
+
+        "24": { "segmentId": 14, "buttonIndex": 8 },
+        "25": { "segmentId": 14, "buttonIndex": 9 },
+        "26": { "segmentId": 14, "buttonIndex": 10 },
+        "27": { "segmentId": 14, "buttonIndex": 11 },
+        "28": { "segmentId": 14, "buttonIndex": 12 },
+        "29": { "segmentId": 14, "buttonIndex": 13 },
+        "30": { "segmentId": 14, "buttonIndex": 14 },
+        "31": { "segmentId": 14, "buttonIndex": 15 },
+
+
+        "32": { "segmentId": 8, "buttonIndex": 0 },
+        "33": { "segmentId": 8, "buttonIndex": 1 },
+        "34": { "segmentId": 8, "buttonIndex": 2 },
+        "35": { "segmentId": 8, "buttonIndex": 3 },
+        "36": { "segmentId": 8, "buttonIndex": 4 },
+        "37": { "segmentId": 8, "buttonIndex": 5 },
+        "38": { "segmentId": 8, "buttonIndex": 6 },
+        "39": { "segmentId": 8, "buttonIndex": 7 },
+
+        "40": { "segmentId": 12, "buttonIndex": 0 },
+        "41": { "segmentId": 12, "buttonIndex": 1 },
+        "42": { "segmentId": 12, "buttonIndex": 2 },
+        "43": { "segmentId": 12, "buttonIndex": 3 },
+        "44": { "segmentId": 12, "buttonIndex": 4 },
+        "45": { "segmentId": 12, "buttonIndex": 5 },
+        "46": { "segmentId": 12, "buttonIndex": 6 },
+        "47": { "segmentId": 12, "buttonIndex": 7 },
+
+        "48": { "segmentId": 13, "buttonIndex": 0 },
+        "49": { "segmentId": 13, "buttonIndex": 1 },
+        "50": { "segmentId": 13, "buttonIndex": 2 },
+        "51": { "segmentId": 13, "buttonIndex": 3 },
+        "52": { "segmentId": 13, "buttonIndex": 4 },
+        "53": { "segmentId": 13, "buttonIndex": 5 },
+        "54": { "segmentId": 13, "buttonIndex": 6 },
+        "55": { "segmentId": 13, "buttonIndex": 7 },
+
+        "56": { "segmentId": 14, "buttonIndex": 0 },
+        "57": { "segmentId": 14, "buttonIndex": 1 },
+        "58": { "segmentId": 14, "buttonIndex": 2 },
+        "59": { "segmentId": 14, "buttonIndex": 3 },
+        "60": { "segmentId": 14, "buttonIndex": 4 },
+        "61": { "segmentId": 14, "buttonIndex": 5 },
+        "62": { "segmentId": 14, "buttonIndex": 6 },
+        "63": { "segmentId": 14, "buttonIndex": 7 },
+
+        "64": { "segmentId": 4, "buttonIndex": 8 },
+        "65": { "segmentId": 4, "buttonIndex": 9 },
+        "66": { "segmentId": 4, "buttonIndex": 10 },
+        "67": { "segmentId": 4, "buttonIndex": 11 },
+        "68": { "segmentId": 4, "buttonIndex": 12 },
+        "69": { "segmentId": 4, "buttonIndex": 13 },
+        "70": { "segmentId": 4, "buttonIndex": 14 },
+        "71": { "segmentId": 4, "buttonIndex": 15 },
+
+        "72": { "segmentId": 5, "buttonIndex": 8 },
+        "73": { "segmentId": 5, "buttonIndex": 9 },
+        "74": { "segmentId": 5, "buttonIndex": 10 },
+        "75": { "segmentId": 5, "buttonIndex": 11 },
+        "76": { "segmentId": 5, "buttonIndex": 12 },
+        "77": { "segmentId": 5, "buttonIndex": 13 },
+        "78": { "segmentId": 5, "buttonIndex": 14 },
+        "79": { "segmentId": 5, "buttonIndex": 15 },
+
+        "83": { "group": "multi1", "customKey": "multi1-treatment", "pressAtStartup": true },
+        "84": { "group": "multi1", "customKey": "multi1-ckey1" },
+        "85": { "group": "multi1", "customKey": "multi1-ckey2" },
+
+        "91": { "group": "multi2", "customKey": "multi2-treatment" },
+        "92": { "group": "multi2", "customKey": "multi2-ckey1", "pressAtStartup": true },
+        "93": { "group": "multi2", "customKey": "multi2-ckey2" },
+
+        "95": { "segmentId": 6, "buttonIndex": 8 },
+
+        "96": { "segmentId": 4, "buttonIndex": 0 },
+        "97": { "segmentId": 4, "buttonIndex": 1 },
+        "98": { "segmentId": 4, "buttonIndex": 2 },
+        "99": { "segmentId": 4, "buttonIndex": 3 },
+        "100": { "segmentId": 4, "buttonIndex": 4 },
+        "101": { "segmentId": 4, "buttonIndex": 5 },
+        "102": { "segmentId": 4, "buttonIndex": 6 },
+        "103": { "segmentId": 4, "buttonIndex": 7 },
+
+        "104": { "segmentId": 5, "buttonIndex": 0 },
+        "105": { "segmentId": 5, "buttonIndex": 1 },
+        "106": { "segmentId": 5, "buttonIndex": 2 },
+        "107": { "segmentId": 5, "buttonIndex": 3 },
+        "108": { "segmentId": 5, "buttonIndex": 4 },
+        "109": { "segmentId": 5, "buttonIndex": 5 },
+        "110": { "segmentId": 5, "buttonIndex": 6 },
+        "111": { "segmentId": 5, "buttonIndex": 7 },
+
+        "114": { "segmentId": 0, "buttonIndex": 0 },
+        "115": { "segmentId": 0, "buttonIndex": 1 },
+        "116": { "segmentId": 0, "buttonIndex": 2 },
+        "117": { "segmentId": 0, "buttonIndex": 3 },
+        "118": { "segmentId": 0, "buttonIndex": 4 },
+        "119": { "segmentId": 0, "buttonIndex": 5 },
+        "120": { "segmentId": 0, "buttonIndex": 6 },
+        "121": { "segmentId": 0, "buttonIndex": 7 },
+        "122": { "segmentId": 1, "buttonIndex": 0 },
+        "123": { "segmentId": 1, "buttonIndex": 1 },
+        "124": { "segmentId": 1, "buttonIndex": 2 },
+        "125": { "segmentId": 1, "buttonIndex": 3 },
+
+        "127": { "segmentId": 6, "buttonIndex": 0 },
+        "208": { "segmentId": 6, "buttonIndex": 1 },
+        "209": { "segmentId": 6, "buttonIndex": 2 },
+        "210": { "segmentId": 6, "buttonIndex": 3 },
+        "211": { "segmentId": 6, "buttonIndex": 4 },
+        "212": { "segmentId": 6, "buttonIndex": 5 },
+        "213": { "segmentId": 6, "buttonIndex": 6 },
+        "214": { "segmentId": 6, "buttonIndex": 7 },
+
+        "215": { "segmentId": 7, "buttonIndex": 0 },
+        "216": { "segmentId": 7, "buttonIndex": 1 },
+        "217": { "segmentId": 7, "buttonIndex": 2 },
+        "218": { "segmentId": 7, "buttonIndex": 3 },
+        "219": { "segmentId": 7, "buttonIndex": 4 },
+        "220": { "segmentId": 7, "buttonIndex": 5 },
+        "221": { "segmentId": 7, "buttonIndex": 6 },
+        "222": { "segmentId": 7, "buttonIndex": 7 },
+
+        "176": { "segmentId": 6, "buttonIndex": 9 },
+        "177": { "segmentId": 6, "buttonIndex": 10 },
+        "178": { "segmentId": 6, "buttonIndex": 11 },
+        "179": { "segmentId": 6, "buttonIndex": 12 },
+        "180": { "segmentId": 6, "buttonIndex": 13 },
+        "181": { "segmentId": 6, "buttonIndex": 14 },
+        "182": { "segmentId": 6, "buttonIndex": 15 },
+
+        "183": { "segmentId": 7, "buttonIndex": 9 },
+        "184": { "segmentId": 7, "buttonIndex": 10 },
+        "185": { "segmentId": 7, "buttonIndex": 11 },
+        "186": { "segmentId": 7, "buttonIndex": 12 },
+        "187": { "segmentId": 7, "buttonIndex": 13 },
+        "188": { "segmentId": 7, "buttonIndex": 14 },
+        "189": { "segmentId": 7, "buttonIndex": 15 },
+        "190": { "segmentId": 7, "buttonIndex": 16 },
+
+        "160": { "segmentId": 15, "buttonIndex": 8 },
+        "161": { "segmentId": 15, "buttonIndex": 9 },
+        "162": { "segmentId": 15, "buttonIndex": 10 },
+        "163": { "segmentId": 15, "buttonIndex": 11 },
+
+        "165": { "segmentId": 15, "buttonIndex": 12 },
+
+        "173": { "segmentId": 15, "buttonIndex": 14 },
+        "174": { "segmentId": 15, "buttonIndex": 15 },
+
+        "192": { "segmentId": 15, "buttonIndex": 0 },
+        "193": { "segmentId": 15, "buttonIndex": 1 },
+        "194": { "segmentId": 15, "buttonIndex": 2 },
+        "195": { "segmentId": 15, "buttonIndex": 3 },
+
+        "197": { "segmentId": 15, "buttonIndex": 4 },
+
+        "201": { "segmentId": 15, "buttonIndex": 5 },
+        "202": { "segmentId": 15, "buttonIndex": 6 },
+        "203": { "segmentId": 15, "buttonIndex": 7 },
+
+        "288": { "segmentId": 0, "buttonIndex": 0 },
+        "289": { "segmentId": 0, "buttonIndex": 1 },
+        "290": { "segmentId": 0, "buttonIndex": 2 },
+        "291": { "segmentId": 0, "buttonIndex": 3 },
+        "292": { "segmentId": 0, "buttonIndex": 4 },
+        "293": { "segmentId": 0, "buttonIndex": 5 },
+        "294": { "segmentId": 0, "buttonIndex": 6 },
+        "295": { "segmentId": 0, "buttonIndex": 7 },
+
+        "296": { "segmentId": 1, "buttonIndex": 0 },
+        "297": { "segmentId": 1, "buttonIndex": 1 },
+        "298": { "segmentId": 1, "buttonIndex": 2 },
+        "299": { "segmentId": 1, "buttonIndex": 3 },
+        "300": { "segmentId": 1, "buttonIndex": 4 },
+        "301": { "segmentId": 1, "buttonIndex": 5 },
+        "302": { "segmentId": 1, "buttonIndex": 6 },
+        "303": { "segmentId": 1, "buttonIndex": 7 },
+
+        "304": { "segmentId": 2, "buttonIndex": 0 },
+        "305": { "segmentId": 2, "buttonIndex": 1 },
+        "306": { "segmentId": 2, "buttonIndex": 2 },
+        "307": { "segmentId": 2, "buttonIndex": 3 },
+        "308": { "segmentId": 2, "buttonIndex": 4 },
+        "309": { "segmentId": 2, "buttonIndex": 5 },
+        "310": { "segmentId": 2, "buttonIndex": 6 },
+        "311": { "segmentId": 2, "buttonIndex": 7 },
+
+        "312": { "segmentId": 3, "buttonIndex": 0 },
+        "313": { "segmentId": 3, "buttonIndex": 1 },
+        "314": { "segmentId": 3, "buttonIndex": 2 },
+        "315": { "segmentId": 3, "buttonIndex": 3 },
+        "316": { "segmentId": 3, "buttonIndex": 4 },
+        "317": { "segmentId": 3, "buttonIndex": 5 },
+        "318": { "segmentId": 3, "buttonIndex": 6 },
+        "319": { "segmentId": 3, "buttonIndex": 7 },
+
+        "320": { "segmentId": 9, "buttonIndex": 0 },
+        "321": { "segmentId": 9, "buttonIndex": 1 },
+        "322": { "segmentId": 9, "buttonIndex": 2 },
+        "323": { "segmentId": 9, "buttonIndex": 3 },
+        "324": { "segmentId": 9, "buttonIndex": 4 },
+        "325": { "segmentId": 9, "buttonIndex": 5 },
+        "326": { "segmentId": 9, "buttonIndex": 6 },
+        "327": { "segmentId": 9, "buttonIndex": 7 },
+
+        "328": { "segmentId": 10, "buttonIndex": 0 },
+        "329": { "segmentId": 10, "buttonIndex": 1 },
+        "330": { "segmentId": 10, "buttonIndex": 2 },
+        "331": { "segmentId": 10, "buttonIndex": 3 },
+        "332": { "segmentId": 10, "buttonIndex": 4 },
+        "333": { "segmentId": 10, "buttonIndex": 5 },
+        "334": { "segmentId": 10, "buttonIndex": 6 },
+        "335": { "segmentId": 10, "buttonIndex": 7 }
+    }
+}

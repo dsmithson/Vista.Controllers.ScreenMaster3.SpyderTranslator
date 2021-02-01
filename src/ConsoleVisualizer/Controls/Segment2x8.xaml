@@ -1,0 +1,61 @@
+﻿<ConsoleControls:SegmentBase
+    xmlns:ConsoleControls="clr-namespace:Spyder.Console.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    x:Class="Spyder.Console.Controls.Segment2x8"
+    Height="90" Width="284" 
+    xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" 
+    xmlns:ConsoleBindable="clr-namespace:Spyder.Console.Controls.Bindable">
+    
+    <ConsoleControls:SegmentBase.DataContext>
+        <ConsoleBindable:BindableSegment LcdMode="Segment" SegmentType="Segment2x8"/>
+    </ConsoleControls:SegmentBase.DataContext>
+    
+    <Grid>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="*"/>
+    	</Grid.RowDefinitions>
+            
+        <!-- LCD Display -->
+    	<Border CornerRadius="1,1,1,1" BorderThickness="3,3,3,3" BorderBrush="#FF1E1E1E" Background="#FF304864" Margin="0,0,0,1">
+    		<StackPanel VerticalAlignment="Center">
+    			<TextBlock Foreground="LightBlue" Text="{Binding Path=TextLine1, Mode=Default}" TextWrapping="NoWrap" FontFamily="Courier New" FontSize="11.5" TextAlignment="Left" Margin="5,0,0,0"/>
+    			<TextBlock Foreground="LightBlue" Text="{Binding Path=TextLine2, Mode=Default}" TextWrapping="NoWrap" FontFamily="Courier New" FontSize="11.5" TextAlignment="Left" Margin="5,0,0,0"/>
+    		</StackPanel>
+    	</Border>
+
+        <!-- Button Array -->
+        <UniformGrid Rows="2" Grid.Row="1">
+            <UniformGrid.Resources>
+                <Style TargetType="{x:Type ConsoleControls:ConsoleButton}">
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="PrimaryColor" Value="{Binding Path=Color, Mode=Default, FallbackValue=Red}"/>
+                    <Setter Property="AlternateColor" Value="{Binding Path=AlternateColor, Mode=Default, FallbackValue=DarkRed}"/>
+                    <EventSetter Event="PreviewMouseDown" Handler="mouse_down"/>
+                    <EventSetter Event="PreviewMouseUp" Handler="mouse_up"/>
+                    <EventSetter Event="PreviewTouchDown" Handler="touch_down"/>
+                    <EventSetter Event="PreviewTouchUp" Handler="touch_up"/>
+                </Style>
+            </UniformGrid.Resources>
+            
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[0]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[1]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[2]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[3]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[4]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[5]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[6]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[7]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[8]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[9]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[10]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[11]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[12]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[13]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[14]}" />
+            <ConsoleControls:ConsoleButton DataContext="{Binding Path=Buttons[15]}" /> 
+            
+        </UniformGrid>
+    </Grid>
+</ConsoleControls:SegmentBase>

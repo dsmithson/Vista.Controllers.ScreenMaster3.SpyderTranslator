@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="Spyder.Console.LargeConsoleControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:console="clr-namespace:Spyder.Console.Controls" 
+             
+             Background="Black"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style x:Key="borderFacePlateBackground" TargetType="{x:Type Border}">
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Margin" Value="3"/>
+        </Style>
+
+        <Style TargetType="{x:Type console:Segment2x8}">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+        </Style>
+
+        <Style TargetType="{x:Type console:Segment4x4}">
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Todo:  Rotary encoders on grid row 0 -->
+        
+        <!-- Top 4x4 panel section -->
+        <StackPanel Grid.Row="1" Grid.Column="4" Grid.RowSpan="2">
+            <console:Segment4x4 DataContext="{Binding Path=Segments[16]}" ButtonLabelTemplate="X20ConsoleKeyFrameTop" Margin="25,0,0,25"/>
+            <console:Segment4x4 DataContext="{Binding Path=Segments[17]}" ButtonLabelTemplate="X20ConsoleKeyFrameBottom" DisplayVisible="False" Margin="25,0,0,45"/>
+        </StackPanel>
+        
+        <!-- Bottom 4x4 panel section -->
+        <StackPanel Grid.Row="3" Grid.Column="4" Grid.RowSpan="2">
+            <console:Segment4x4 DataContext="{Binding Path=Segments[18]}" ButtonLabelTemplate="X20ConsoleSelectorTop" Margin="25,0,0,25"/>
+            <console:Segment4x4 DataContext="{Binding Path=Segments[19]}" ButtonLabelTemplate="X20ConsoleSelectorBottom" DisplayVisible="False" Margin="25,0,0,0"/>
+        </StackPanel>
+
+        <!-- 2x8 Row 1 -->
+        <console:Segment2x8 Grid.Row="1" Grid.Column="0" DataContext="{Binding Path=Segments[0]}"/>
+        <console:Segment2x8 Grid.Row="1" Grid.Column="1" DataContext="{Binding Path=Segments[1]}"/>
+        <console:Segment2x8 Grid.Row="1" Grid.Column="2" DataContext="{Binding Path=Segments[2]}"/>
+        <console:Segment2x8 Grid.Row="1" Grid.Column="3" DataContext="{Binding Path=Segments[3]}"/>
+
+        <!-- 2x8 Row 2 -->
+        <console:Segment2x8 Grid.Row="2" Grid.Column="0" DataContext="{Binding Path=Segments[4]}"/>
+        <console:Segment2x8 Grid.Row="2" Grid.Column="1" DataContext="{Binding Path=Segments[5]}"/>
+        <console:Segment2x8 Grid.Row="2" Grid.Column="2" DataContext="{Binding Path=Segments[6]}"/>
+        <console:Segment2x8 Grid.Row="2" Grid.Column="3" DataContext="{Binding Path=Segments[7]}"/>
+
+        <!-- 2x8 Row 3 -->
+        <console:Segment2x8 Grid.Row="3" Grid.Column="0" DataContext="{Binding Path=Segments[8]}"/>
+        <console:Segment2x8 Grid.Row="3" Grid.Column="1" DataContext="{Binding Path=Segments[9]}"/>
+        <console:Segment2x8 Grid.Row="3" Grid.Column="2" DataContext="{Binding Path=Segments[10]}"/>
+        <console:Segment2x8 Grid.Row="3" Grid.Column="3" DataContext="{Binding Path=Segments[11]}"/>
+
+        <!-- 2x8 Row 4 -->
+        <console:Segment2x8 Grid.Row="4" Grid.Column="0" DataContext="{Binding Path=Segments[12]}"/>
+        <console:Segment2x8 Grid.Row="4" Grid.Column="1" DataContext="{Binding Path=Segments[13]}"/>
+        <console:Segment2x8 Grid.Row="4" Grid.Column="2" DataContext="{Binding Path=Segments[14]}"/>
+        <console:Segment2x8 Grid.Row="4" Grid.Column="3" DataContext="{Binding Path=Segments[15]}"/>
+
+    </Grid>
+</UserControl>
