@@ -1,0 +1,51 @@
+﻿<ContentControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+    xmlns:ValueConverters="clr-namespace:Spyder.Console.ValueConverters"
+    x:Class="Spyder.Console.Controls.ConsoleButton"
+    Height="Auto" Width="Auto" Background="{x:Null}" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" d:DesignWidth="64" d:DesignHeight="64">
+    <ContentControl.Resources>
+        <ValueConverters:VisibilityConverter x:Key="VisibilityConverter"/>
+    </ContentControl.Resources>
+    <ContentControl.Template>
+        <ControlTemplate TargetType="{x:Type ContentControl}">
+            <Border Width="Auto" Height="Auto" CornerRadius="1,1,1,1" BorderThickness="1,1,1,1" BorderBrush="#FFF7F7F7">
+                <Border.Background>
+                    <SolidColorBrush Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CurrentColor, FallbackValue=#FF627A97}"/>
+                </Border.Background>
+                <Grid Width="Auto" Height="Auto">
+                    <Rectangle Margin="2,2,2,0" VerticalAlignment="Top" Height="11.097" Stroke="{x:Null}" RadiusX="2" RadiusY="2" IsHitTestVisible="False" x:Name="buttonWhiteTop">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#E5FFFFFF" Offset="0"/>
+                                <GradientStop Color="#00FFFFFF" Offset="0.589"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Stroke="{x:Null}" IsHitTestVisible="False" x:Name="subtleWhiteGradient">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.801,0.872" StartPoint="0.458,0.257">
+                                <GradientStop Color="#06FFFFFF" Offset="0"/>
+                                <GradientStop Color="#69FFFFFF" Offset="0.996"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle x:Name="dimOverlay" Stroke="{x:Null}" Visibility="{Binding Path=Dim, Converter={StaticResource VisibilityConverter}, Mode=Default, FallbackValue=Visible}">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#7F000000" Offset="0"/>
+                                <GradientStop Color="#7F000000" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Viewbox Margin="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Viewbox>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </ContentControl.Template>
+
+</ContentControl>
